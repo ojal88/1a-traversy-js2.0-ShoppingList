@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+	/* Box Model */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/* Typography */
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	/* Color */
+	color: #333;
+	background-color: #f5f5f5;
+}
+
+header {
+	/* Layout */
+	display: flex;
+	/* Flexbox */
+	justify-content: flex-start;
+	align-items: center;
+	/* None */
+	margin-bottom: 20px;
+}
+
+header h1 {
+	/* Typography */
+	font-weight: 300;
+	/* None */
+	margin-left: 10px;
+}
+
+.container {
+	/* Box Model */
+	margin: 30px auto;
+	padding: 20px;
+	/* None */
+	max-width: 500px;
+}
+
+/* Form & Input */
+
+.form-input {
+	/* Box Model */
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	/* Typography */
+	font-size: 18px;
+	/* None */
+	margin-bottom: 20px;
+	border-radius: 5px;
+	outline: none;
+}
+
+.form-input-filter {
+	/* Box Model */
+	width: 100%;
+	padding: 10px;
+	border: none;
+	/* Typography */
+	font-size: 18px;
+	/* None */
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+	background: transparent;
+	outline: none;
+}
+
+/* Buttons */
+
+.btn {
+	/* Box Model */
+	padding: 10px 20px;
+	border: none;
+	/* Color */
+	color: #fff;
+	background-color: #333;
+	/* None */
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	/* Color */
+	background-color: #444;
+}
+
+.btn-link {
+	/* Box Model */
+	padding: 0;
+	border: none;
+	/* Typography */
+	font-size: 16px;
+	/* Color */
+	color: #333;
+	background-color: transparent;
+	/* None */
+	cursor: pointer;
+}
+
+.btn-clear {
+	/* Box Model */
+	width: 100%;
+	padding: 10px 20px;
+	border: 1px solid #ccc;
+	/* Typography */
+	font-size: 16px;
+	/* Color */
+	color: #333;
+	background-color: transparent;
+	/* None */
+	margin-top: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.btn-clear:hover {
+	/* Color */
+	background-color: #f1f1f1;
+}
+
+.text-red {
+	/* Color */
+	color: red;
+}
+
+/* Items */
+
+.items {
+	/* Layout */
+	display: flex;
+	/* Flexbox */
+	flex-wrap: wrap;
+	/* None */
+	margin-top: 20px;
+}
+
+.items li {
+	/* Layout */
+	display: flex;
+	/* Box Model */
+	width: 45%;
+	margin: 0 5px 20px;
+	padding: 10px 15px;
+	border: 1px solid #ccc;
+	/* Typography */
+	font-weight: 700;
+	/* Flexbox */
+	justify-content: space-between;
+	/* None */
+	border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+	.items li {
+		width: 100%;
+	}
+}
