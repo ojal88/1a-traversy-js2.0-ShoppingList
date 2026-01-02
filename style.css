@@ -157,6 +157,13 @@ header h1 {
 	justify-content: space-between;
 	/* None */
 	border-radius: 5px;
+
+	/* change cursor when hover */
+	cursor: pointer;
+}
+
+.edit-mode{
+	color: #ccc;
 }
 
 @media (max-width: 500px) {
